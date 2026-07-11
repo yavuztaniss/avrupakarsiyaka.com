@@ -1,0 +1,35 @@
+html, body { margin: 0; padding: 0; background: #ffffff; }
+body { font-family: var(--font-nunito), 'Nunito', sans-serif; color: #1C2B22; -webkit-font-smoothing: antialiased; }
+a { color: #157A46; text-decoration: none; }
+a:hover { color: #0C5231; }
+::selection { background: #157A46; color: #ffffff; }
+input, select, textarea, button { font-family: inherit; }
+* { box-sizing: border-box; }
+@keyframes yukariKay { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes noktaAtla { 0%, 60%, 100% { opacity: 0.25; } 30% { opacity: 1; } }
+
+.nav-link { font-size: 15px; font-weight: 700; color: #33443B; padding: 4px 0; }
+.nav-link:hover { color: #157A46; }
+.nav-link.aktif { font-weight: 800; color: #157A46; border-bottom: 3px solid #D0342C; }
+.btn-kirmizi { background: #D0342C; color: #ffffff; font-weight: 800; border-radius: 999px; border: none; cursor: pointer; display: inline-block; }
+.btn-kirmizi:hover { background: #B02820; color: #ffffff; }
+.btn-yesil { background: #157A46; color: #ffffff; font-weight: 800; border-radius: 999px; border: none; cursor: pointer; display: inline-block; }
+.btn-yesil:hover { background: #0C5231; color: #ffffff; }
+.btn-cerceve-yesil { border: 2px solid #157A46; color: #157A46; font-weight: 800; border-radius: 999px; background: transparent; cursor: pointer; display: inline-block; }
+.btn-cerceve-yesil:hover { background: #157A46; color: #ffffff; }
+.btn-cerceve-kirmizi { border: 2px solid #D0342C; color: #D0342C; font-weight: 800; border-radius: 999px; background: transparent; cursor: pointer; display: inline-block; }
+.btn-cerceve-kirmizi:hover { background: #D0342C; color: #ffffff; }
+.btn-beyaz { background: #ffffff; color: #D0342C; font-weight: 900; border-radius: 999px; border: none; cursor: pointer; display: inline-block; }
+.btn-beyaz:hover { background: #0C5231; color: #ffffff; }
+.link-kirmizi { color: #D0342C; font-weight: 800; }
+.link-kirmizi:hover { color: #B02820; }
+.footer-link { color: #CFE5D6; font-size: 14px; font-weight: 600; }
+.footer-link:hover { color: #ffffff; }
+.hero-grid, .iki-kolon { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: center; }
+.iki-kolon-ters { display: grid; grid-template-columns: 1fr 1.1fr; gap: 48px; align-items: center; }
+.haber-duzen { display: grid; grid-template-columns: 1fr 320px; gap: 40px; align-items: start; }
+.footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.4fr; gap: 40px; }
+@media (max-width: 900px) {
+  .hero-grid, .iki-kolon, .iki-kolon-ters, .haber-duzen { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
